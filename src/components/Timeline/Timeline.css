@@ -1,0 +1,16 @@
+.timeline {
+  list-style-type: none;
+  position: relative;
+  margin: 8em auto;
+  width: 90vw;
+  color: #ffffff;
+}
+.timeline::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 45%;
+  bottom: 0;
+  width: 10px;
+  background-color: #f8aff2;
+}

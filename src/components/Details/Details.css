@@ -1,0 +1,53 @@
+.timeline li {
+  position: relative;
+  margin-bottom: 8em;
+  line-height: 32px;
+  letter-spacing: 2px;
+}
+.timeline li:nth-child(odd) {
+  margin-left: 50%;
+}
+.timeline li:nth-child(even) {
+  margin-right: 50%;
+  display: flex;
+  justify-content: flex-end;
+}
+.timeline li:nth-child(odd) article.content {
+  margin-left: 5px;
+}
+.timeline li:nth-child(odd) article.content::before,
+.timeline li:nth-child(even) article.content::after {
+  content: " ";
+  height: 0;
+  width: 0;
+  position: absolute;
+  top: 10px;
+  border: 0 solid transparent;
+  border-width: 10px;
+}
+.timeline li:nth-child(odd) article.content::before {
+  left: -15px;
+  border-right-color: #be35cb;
+}
+.timeline li:nth-child(even) article.content::after {
+  right: 95px;
+  border-left-color: #be35cb;
+}
+.timeline li:nth-child(even) article.content {
+  margin-right: 115px;
+}
+article.content {
+  padding: 0.5em;
+  width: 400px;
+  line-height: 1.5em;
+  background-color: #be35cb;
+  border-radius: 5px;
+}
+article.content > h2 {
+  margin-top: 1em;
+  padding: 1em;
+  border-bottom: 1px solid #ffffff;
+}
+article.content div {
+  padding: 0.5em;
+}

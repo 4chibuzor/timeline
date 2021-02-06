@@ -1,0 +1,23 @@
+.timeline .icons {
+  border: 10px solid #f8aff2;
+  background-color: #be35cb;
+  width: 100px;
+  height: 100px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 50%;
+}
+.timeline li:nth-child(odd) .icons {
+  position: absolute;
+  top: 0;
+  left: -105px;
+}
+.timeline li:nth-child(even) .icons {
+  position: absolute;
+  top: 0;
+  right: 5px;
+}
+.icons > span {
+  font-size: 2em;
+}
